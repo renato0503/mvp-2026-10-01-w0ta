@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAME SORTER</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">root@siem:~# sort_names.py</span>
+    </div>
+    <div class="terminal-body">
+      <div class="header-text">
+        <h1>=== PROCESSADOR DE LISTAS: NOMES ===</h1>
+        <p class="instructions">Sistema de ordenação alfabética e consulta de posição.</p>
+      </div>
+      
+      <div class="log-area">
+        <div class="log-line">> Iniciando script sort_names.py...</div>
+        <div class="log-line">> Carregando lista 'nomes' (20 itens)... OK</div>
+        <div class="log-line">> Executando comando: sorted(nomes)</div>
+        <div class="log-line success">> Ordenação concluída com sucesso.</div>
+        <div class="log-line">> Exibindo lista completa...</div>
+      </div>
+
+      <div class="list-container">
+        <div class="list-header">--- Lista de 20 Nomes em Ordem Alfabética ---</div>
+        <ol id="names-list">
+          <!-- Preenchido via JS -->
+        </ol>
+      </div>
+
+      <div class="result-box">
+        <div class="separator">========================================</div>
+        <div class="result-text">
+          O 16º nome da lista é: <span id="result-name">...</span>
+        </div>
+        <div class="separator">========================================</div>
+      </div>
+
+      <div class="footer-info">
+        <span class="prompt-symbol">$</span> <span>Processo finalizado.</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
